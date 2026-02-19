@@ -8,3 +8,11 @@ student2.push("Saif");  // push er maddome kono item k last add kora jay
 console.log(student2);
 student2.unshift("Rakibbaaa");
 console.log(student2);
+
+// kono item remove korar jonno pop(last er dik theke) and shift(first er dik theke) use kora hoy
+
+let student3= ["Tanim","Tanisha","Ayesha","Ayan","Tasnim","Fatema","Nadiya"];
+student3.pop();
+console.log(student3);
+student3.shift();
+console.log(student3);

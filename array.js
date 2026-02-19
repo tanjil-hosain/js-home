@@ -12,7 +12,9 @@ console.log(student2);
 // kono item remove korar jonno pop(last er dik theke) and shift(first er dik theke) use kora hoy
 
 let student3= ["Tanim","Tanisha","Ayesha","Ayan","Tasnim","Fatema","Nadiya"];
-student3.pop();
-console.log(student3);
-student3.shift();
+
+student3.pop();         //last er dik theke remove
+console.log(student3);  
+
+student3.shift();           //frist dik theke remove
 console.log(student3);

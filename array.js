@@ -6,6 +6,8 @@ console.log(typeof student)   // typeof er maddhome data type jana jay
 let student2=["Rakib","Shakib","Akib","fahim","Said","Tanjil"];
 student2.push("Saif");  // push er maddome kono item k last add kora jay
 console.log(student2);
+
+
 student2.unshift("Rakibbaaa");
 console.log(student2);
 

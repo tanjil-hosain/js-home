@@ -17,7 +17,7 @@ s_number.sort();
 console.log(s_number);
 
 //reverse()  metod
-// eta last element theke frist element position onujai bose kono kromo nai
+// eta last element theke frist element position onujai bose kono kromo nai 
 let capital=["A","B","C","D","E","F","G","H"];
 revers_capital=capital.reverse();
 console.log(revers_capital);
@@ -25,3 +25,21 @@ console.log(revers_capital);
 let num1=[2,34,5,6,11,10,1,7,9,3];
 num1.reverse();
 console.log(num1);
+
+
+//Sorting
+
+//Accending
+let num2=[2,4,5,6,1,3,9,11,23,21,77,56,71,7];
+num2.sort(function(a,b){
+    return a-b;
+})
+console.log(num2);
+
+//Deccending
+let num3 = num2;
+num3.sort(function(a,b){
+        return b-a;
+    }
+)
+console.log(num3);

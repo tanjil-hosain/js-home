@@ -1,4 +1,7 @@
+//if else if bebohar kore grade program
+
 const prompt = require('prompt-sync')();
+
 let marks=Number(prompt("Plaese Enter Your Marks:"));
 if(marks>100){
     console.log("This is Invalid Marks");

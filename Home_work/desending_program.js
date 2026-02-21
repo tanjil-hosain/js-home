@@ -13,11 +13,8 @@ for(let i =0; i < total_input; i++){
     numbers.push(input);
 }
 
-let max = Math.max(...numbers);
-console.log(`The maximum number is: ${max}`);
-
-// numbers.sort(function(a,b){
-//     return b-a;
-// })
-// console.log("Sorted  Numbers:",numbers);
+numbers.sort(function(a,b){
+    return b-a;
+})
+console.log("Sorted  Numbers:",numbers);
 

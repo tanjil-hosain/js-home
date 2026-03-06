@@ -23,13 +23,13 @@ for(i=0; i< document.form.subject.length; i++){
 
 
 }
-   store.document.write("Stuent Id "+id + "<br>")
+   store.document.write("Stuent Id: "+id + "<br>")
  store.document.write("Student Name :" + name + "<br>");
           store.document.write("Student Address :" + address + "<br>");
           store.document.write("Email " + email +  "<br>");
           store.document.write("Round: " + round +  "<br>");
-          store.document.write("Gender "+gender  +  "<br>")
-          store.document.write("Subject: "+subject)
+          store.document.write("Gender "+ gender  +  "<br>")
+          store.document.write("Subject: " +subject)
        
           
 }

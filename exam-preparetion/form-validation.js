@@ -45,7 +45,7 @@ function form_validation(){
     }
    }
 
-   store = window.open("","", "width=300px, height=300px");
+   store = window.open("","", "width=500px, height=300px");
 
    store.document.write("Student Name:"+ name +"<br>");
    store.document.write("Email:" + email+ "<br>");
@@ -53,6 +53,12 @@ function form_validation(){
    store.document.write("Round:"+ round+ "<br>");
    store.document.write("Curse: " + curse + "<br>")
    store.document.write("Gender: "+ gender);
+
+
+   store.document.write("<hr>")
+   store.document.write("<button onclick= 'window.print()'> Print</button>");
+   store.document.write("<button onclick= 'window.close()'> Close</button>");
+   store.document.close();
    
 
 

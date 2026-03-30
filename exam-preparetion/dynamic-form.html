@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <fieldset class="form">
+        <legend>Student Information</legend>
+        <form action="#" name="form">
+            Name: <br>
+            <input type="text" name="name"><br> <br>
+            Email: <br>
+            <input type="text" name="email" > <br> <br>
+            Password: <br>
+            <input type="text" name="password"> <br> <br>
+            Gender : <br>
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female
+            <br><br>
+            Round: <br>
+            <select name="round">
+                <option name="round" value="70">70</option>
+                <option name="round" value="71">71</option>
+                <option name="round" value="72">72</option>
+            </select> <br>
+            Subject: <br>
+            <input type="checkbox" name="subject" value="Java">Java
+            <input type="checkbox" name="subject" value="MySQL">MySQL
+            <input type="checkbox" name="subject" value="PHP">PHP
+            <input type="checkbox" name="subject" value="Laeavel">Laravel
+            <br><br>
+            <input type="submit"value="Submit" onclick="return form_validation()">
+            <input type="reset" value="Reset">
+        </form>
+    </fieldset>
+    <script>
+        function form_validation(){
+           let  name= document.form.name.value;
+           let  email= document.form.email.value;
+            let password= document.form.password.value;
+          let   gender= "";
+           let  round= document.form.round.value;
+           let  subject= "";
+
+            if (name==""){
+                alert("Plaese Enter Your Name!");
+                return false;
+            }
+
+            //Email Validation
+            if(email==""){
+                alert("Please Enter your email!");
+                return false;
+            }
+            if(email.indexOf("@") == -1 || email.indexOf(".")== -1){
+                alert("Your Email Is invalid!!!");
+                return false;
+            }
+
+            //Password Validation
+            if(password==""){
+                alert("Plase Enter your Password!");
+                return false;
+            }
+            if(password.length <5 ||password.length>8 ){
+                alert ("Password must be minimum 5 and maximum 8 charecter")
+                return false; 
+            }
+
+            for(let i = 0; i < document.form.gender.length; i++){
+                if(document.form.gender[i].checked){
+                    gender= document.form.gender[i].value + "";
+                }
+            }
+
+            for(let i=0 ; i<document.form.subject.length; i++){
+                if(document.form.subject[i].checked){
+                    subject+= document.form.subject[i].value + ",";
+                }
+            }
+
+
+            store= window.open("","", "width=400px, height=300px");
+
+            store.document.write("Student Name:" + name + "<br>")
+            store.document.write( "Email: " + email+  "<br>");
+            store.document.write("Password: " + password +  "<br>")
+            store.document.write("Gender: " + gender+ "<br>")
+            store.document.write("Round: "+ round + "<br>" )
+            store.document.write("Subjct: " + subject+ "<br>" );
+
+            store.document.write("<hr>");
+            store.document.write("<button onclick='window.print()'> Print</button>");
+            store.document.write("<button onclick='window.close()'> Close</button>");
+            store.document.close();
+           
+
+        }
+    </script>
+</body>
+</html>

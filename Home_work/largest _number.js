@@ -21,5 +21,5 @@ let input= Number(prompt(`Enter your ${i+1}nd Number: `))
 numbers.push(input);
     
 }
-let max = Math.max(...numbers); //... array er item er gula bujay
-console.log(`The maximum number is: ${max}`);
+// let max = Math.max(...numbers); //... array er item er gula bujay
+// console.log(`The maximum number is: ${max}`);
